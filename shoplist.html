@@ -1,0 +1,323 @@
+
+<!DOCTYPE html>
+
+<!--
+
+--> 
+
+<html>
+
+<title>
+  Home
+</title>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<script type="text/javascript" src="http://gc.kis.scr.kaspersky-labs.com/1B74BD89-2A22-4B93-B451-1C9E1052A0EC/main.js" charset="UTF-8"></script>
+</head>
+
+
+<style type="text/css">
+:root{
+    /*
+    Use these to change colours
+    */
+    --text:#111111;
+	--text2:#919191;
+    --main-bg:#444444;  /*Color for the main bar*/
+    --fg-one:#4c4c4c;	/*Search bar field*/
+    --fg-two:#997744;	/*No idea*/
+    --fg-three:#666666;	/*Color for the individual bars*/
+    --shadow:#100908;
+    --bar-bg:#312c38;  	/*No idea*/
+    
+    /*
+    I should have labeled the varibles better, but fuck it.
+    You can figure them out.
+    */
+}
+* {
+    text-decoration: none;
+    color: var(--text);
+}
+u {
+	text-decoration: underline;	
+}
+/*body {
+    background: url('bg.gif') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+
+	margin:40px auto;
+	max-width:650px;
+	line-height:1.6;
+	font-size:18px;
+	color:#000000;
+	padding:0 10px;
+}*/
+html {
+    /*background: url("giphy12.gif") ; */
+	/*background: url('giphy12.gif') no-repeat center center fixed;*/
+	background: url('bg2.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*background-size: 130%;
+    background-repeat: repeat; */
+    color: var(--text);
+    font-family: "Terminus", monospace;
+    font-size: 14px;
+}
+body {
+    background-color: var(--main-bg);
+    box-shadow: 5px 5px 5px var(--shadow);
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    text-align: center;
+    height: 600px;
+    padding: 10px 10px 10px 10px;
+    position: static ;
+    z-index: -1;
+    width: 200px;
+}
+  input, select, textarea{
+    background: var(--fg-one);
+    width: 75%;
+    height: 30px;
+    padding: 0px 10px 0px 10px;
+    margin: auto;
+    margin-top: -5px;
+}
+#wrap {
+    background: var(--fg-three);
+    width: 400px;
+    z-index: 1;
+    position: relative;
+    margin: 10px 10px 10px -100px ;
+    height: 6%;
+    box-shadow: 5px 5px 5px var(--shadow);
+    padding: 18px 0px 5px 0px;
+	color: var(--text);
+}
+.links {
+    background: var(--fg-three);
+    width: 280px;
+    z-index: 1;
+    position: relative;
+    margin: 40px 10px 10px -40px ;
+    box-shadow: 5px 5px 5px var(--shadow);
+    padding: 20px 0px 5px 0px;
+    text-align: center;
+    height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+a:hover {
+    text-shadow: 1px 1px var(--shadow);
+}
+.hv:hover table {
+    visibility: visible;
+}
+td:hover {
+    background: var(--fg-two);
+}
+.hv:hover b {
+    color: var(--fg-two);
+}
+b{
+    padding: 0px 0px 2px 0px;
+    text-align: center;
+    position: absolute;
+    left: 30%;
+    right: 30%;
+    background: var(--fg-three);
+    z-index: 3
+}
+#q {
+    border: 0; border-radius: 1px;
+    font-family: "Terminus", monospace;
+    color: var(--text);
+    text-align: center;
+    box-shadow: 2px 2px 2px var(--main-bg); 
+  }
+#left,#right{
+    padding: 5px 0px 5px 0px;
+    display: none;
+    white-space: nowrap;
+}
+#left{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    /*
+    margin-right: 120px;
+    margin-left: 10px;
+    /**/
+}
+#right {
+     position: absolute;
+    right: 20px;
+    top: 15px;
+    /*
+    margin-left: 100px;
+    /**/
+}
+.links:hover{
+    width: 540px;
+    margin-left: -170px;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+#two:hover{       
+    width: 600px;     
+    margin-left: -200px; 
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+#two>#left{
+    margin-right: 100px;
+}
+#three:hover{
+    width: 660px;
+    margin-left: -230px;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+#four:hover{
+    width: 600px;     
+    margin-left: -200px; 
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+/*#four>#left{
+    margin-right: 100px;
+    margin-left: 20px;
+}
+#four>#right{
+    margin-left: 150px;
+}
+/**/
+.links:hover #left,.links:hover #right{
+    display: inline;
+}
+a{
+    padding: 0px 5px 0px 5px;
+	font-family: "Terminus", monospace;
+    color: var(--text);
+    text-align: center;
+	font-size: 16px;
+}
+#block{
+    position: absolute;
+    z-index: 0;
+    background: #885d39;
+    top: 200px;
+    margin: auto;
+    right: 45%;
+    width:100px;
+    height: 400px;
+    box-shadow: 5px 5px 5px var(--main-bg); 
+}
+l {
+	font-family: "Terminus", monospace;
+    color: var(--text);
+    text-align: center;
+	font-size: 16px;
+}
+l:hover {
+	text-shadow: 1px 1px var(--shadow);
+	cursor: pointer;
+		
+}
+</style>
+
+<script type="text/javascript" language="javascript">
+var $=function(id) { return document.getElementById(id); };
+var search=[ // Search engines
+    ["",    "https://www.google.com/#q="],                               // DuckDuckGo (Default)
+    ["!d",  "https://duckduckgo.com/?q="],                               // DuckDuckGo
+    ["!g",  "https://www.google.com/#q="],                               // Google
+    ["!i",  "https://www.google.com/search?tbm=isch&q="],                // Google Images
+    ["!y",  "https://www.youtube.com/results?search_query="],            // YouTube
+    ["!w",  "http://en.wikipedia.org/w/index.php?search="],              // Wikipedia
+    ["!m",  "http://www.imdb.com/find?q="],                              // IMDb
+    ["!u",  "http://www.urbandictionary.com/define.php?term="],          // Urban Dictionary
+    ["!n",  "http://www.nyaa.se/?page=search&cats=0_0&filter=0&term="],  // Nyaa
+    ["!t",  "http://shop.tcgplayer.com/magic/product/show?ProductName="],// TCGplayer
+    ["!a",  "https://aur.archlinux.org/packages/?O=0&K="],               // AUR
+];
+var ss="";
+function init() {
+    for(var i=0;i<search.length;i++) if(search[i][0]=="") ss=search[i][1];
+    if(ss=="") alert("Error: Missing default search engine!");
+    build();
+    $('q').value="";
+    $('q').focus();
+}
+function handleQuery(e,q) { // Handle search query
+    var key=e.keyCode || e.which;
+    if(key==13) { // enter
+        if(q.lastIndexOf("!")!=-1) {
+            var x=q.lastIndexOf("!"),found=false;
+            for(var i=0;i<search.length;i++) {
+                if(search[i][0]==q.substr(x)) { // Find "!?"
+                    found=true; window.location=search[i][1]+q.substr(0,x).replace(/&/g,"%26");
+                }
+            }
+            if(!found) { // Invalid "!?", use default
+                window.location=ss+q.substr(0,x).replace(/&/g,"%26");
+            }
+        } else { // "!?" where not specified, use default
+            window.location=ss+q.replace(/&/g,"%26");
+        }
+    }
+}
+</script>
+
+<body onload="javascript:init();">
+   <h1 id="header">Home</h1>
+    <div id="wrap">
+     <input  autofocus type="text" id="q" value="" placeholder="" onkeypress="javascript:handleQuery(event,this.value);" onfocus="this.value=this.value" />
+    </div>
+	<div><a> </a></div>
+	<a href="https://www.antonioli.eu/en/US/men">antonioli</a>
+	<div><a>-</a></div>
+	<a href="https://www.barneys.com/category/men/N-fh7rea">barneys</a>
+	<div><a>-</a></div>
+	<a href="https://www.dolitashoes.com/collections/mens-footwear">dolita</a>
+	<div><a>-</a></div>
+	<a href="https://www.endclothing.co.uk">end</a>
+	<div><a>-</a></div>
+	<a href="https://www.grailed.com/">grailed</a>
+	<div><a>-</a></div>
+	<a href="https://www.notre-shop.com/">notre</a>
+	<div><a>-</a></div>
+	<a href="https://www.saksfifthavenue.com/main/SectionPage.jsp?FOLDER%3C%3Efolder_id=2534374306418052">saks</a>
+	<div><a>-</a></div>
+	<a href="https://www.ssense.com/">ssense</a>
+	<div><a>-</a></div>
+	<a href="https://www.sz-mag.com/store/">zeitgeist</a>
+	<div><a>-</a></div>
+	<a href="https://urban-oxygen.com/">urban <u>o</u>xygen</a>
+	<div><a>-</a></div>
+	<a href="homepage2 - grayscaleDark.html">[HOME]</a>
+</body>
